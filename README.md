@@ -13,49 +13,20 @@ Generates smart, context-aware email replies directly inside Gmail/Outlook using
 🌐 Browser extension support
 🔗 REST API integration
 🔄 Application Flow
-User Opens Email
-        │
-        ▼
-Browser Extension Reads Email
-        │
-        ▼
-React Frontend Sends Request
-        │
-        ▼
-Spring Boot Backend API
-        │
-        ▼
-Spring AI + Gemini API
-        │
-        ▼
-AI Generates Smart Reply
-        │
-        ▼
-Reply Shown Inside Inbox
-🏗️ Architecture Diagram
-┌────────────────────┐
-│ Gmail / Outlook UI │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│ Browser Extension  │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│   React Frontend   │
-└─────────┬──────────┘
-          │ REST API
-          ▼
-┌────────────────────┐
-│ Spring Boot Backend│
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│ Spring AI + Gemini │
-└────────────────────┘
+```text
+Email UI
+   ↓
+Browser Extension
+   ↓
+React Frontend
+   ↓
+Spring Boot Backend
+   ↓
+Spring AI + Gemini
+   ↓
+Smart AI Reply
+```
+
 🛠️ Tech Stack
 ☕ Java
 🍃 Spring Boot
